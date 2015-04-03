@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!-- generator="Podcast Generator 2.0" -->
+	<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xml:lang="en_EN" version="2.0">
+	<channel>
+		<title>{title}</title>
+		<link>{link}</link>
+		<description>{product_description}.</description>
+		<generator>Fonolibro - http://fonolibro.com</generator>
+		<lastBuildDate>{build_date}</lastBuildDate>
+		<language>en_EN</language>
+		<copyright>Fonolibro</copyright>
+		<itunes:image href="{itune_image}" />
+		<image>
+		<url>{itune_image}</url>
+		<title>{podcast_title}</title>
+		<link>{link}</link>
+		</image>
+		<itunes:summary>{podcast_summary}</itunes:summary>
+		<itunes:subtitle>{subtitle}</itunes:subtitle>
+		<itunes:author>Fonolibro</itunes:author>
+		<itunes:owner>
+		<itunes:name></itunes:name>
+		<itunes:email></itunes:email>
+		</itunes:owner>
+		<itunes:explicit>no</itunes:explicit>
+		<itunes:category text="{category}"></itunes:category>
+			<item>
+			  <title>{chapter}</title>
+			  <itunes:subtitle>{track_title}</itunes:subtitle>
+			  <itunes:summary><![CDATA[ {track_title} ]]></itunes:summary>
+			  <description>Fonolibro</description>
+			  <link>{track_link}</link>
+			  <enclosure url="{track_url}" length="2817077" type="audio/mpeg"/>
+			  <guid>{guid}</guid>
+			  <itunes:duration>{duration}</itunes:duration>
+				  <author>admin@fonolibro.com</author>
+				  <itunes:author>Fonolibro</itunes:author>
+				  <itunes:explicit>no</itunes:explicit>
+				  <pubDate>{publishdate}</pubDate>
+			  </item>
+		</channel>
+		</rss>

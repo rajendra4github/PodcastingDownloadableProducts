@@ -1,0 +1,39 @@
+<config>
+    <modules>
+	  <Iblesoft_Podcast>
+		  <version>0.1.0</version>
+	  </Iblesoft_Podcast>
+    </modules>
+    <global>
+    	<blocks>
+            <podcast>
+                <class>Iblesoft_Podcast_Block</class> <!--this is a new block page for that custom module-->
+            </podcast>
+            <downloadable>
+                <rewrite>
+                    <customer_products_list>Iblesoft_Podcast_Block_Products_List</customer_products_list>
+                </rewrite>
+            </downloadable>
+        </blocks>
+        
+    	<events>
+            <model_save_after>
+                <observers>
+                    <podcast>
+                        <class>Iblesoft_Podcast_Model_Observer</class>
+                        <method>createItune</method>
+                    </podcast>
+                </observers>
+            </model_save_after>
+			
+			 <catalog_product_save_after>
+                <observers>
+                    <podcast>
+                        <class>Iblesoft_Podcast_Model_Observer</class>
+                        <method>createItuneAlbum</method>
+                    </podcast>
+                </observers>
+            </catalog_product_save_after>
+		</events>	
+    </global>   
+</config>

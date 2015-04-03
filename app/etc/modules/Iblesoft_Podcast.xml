@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Iblesoft_Podcast>
+            <active>true</active>
+            <codePool>community</codePool>
+			<depends>
+                <Mage_Downloadable/>
+            </depends>
+        </Iblesoft_Podcast>
+    </modules>
+</config>
